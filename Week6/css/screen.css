@@ -97,3 +97,62 @@ nav a {
   text-align: center;
   text-decoration: none;
 }
+
+/* State */
+@media screen and (min-width: 370px){
+  body {
+    padding-left: 5.945946%; /* 22 / 370 = 0.05945946 */
+    padding-right: 5.945946%; /* 22 / 370 = 0.05945946 */
+  }
+}
+
+@media screen and (min-width: 625px){
+  html {
+    font-size: 1.25em /* 20 / 16 = 1.25 */
+  }
+}
+
+@media screen and (min-width: 720px){
+  body {
+    padding-left: 11.111111%; /* 80 / 720 = 0.11111111 */
+    padding-right: 11.111111%; /* 80 / 720 = 0.11111111 */
+  }
+}
+
+@media screen and (min-width: 920px){
+  /*
+   920px / whole screen
+   -60px / margin(total)
+   275px / each column
+   17.5px / each gutter
+
+   left-hand column: 275px*2 + 17.5 = 567.5px;
+   right-hand column: 275px;
+  */
+  body {
+    padding-right: 3.2698696%;  /* 30 / 920 = 0.032698696 */
+    padding-left: 3.2698696%;  /* 30 / 920 = 0.032698696 */
+  }
+
+  #primary {
+    width: 65.988372%; /* 567.5 / 860 = 0.65988372*/
+    float: left;
+  }
+
+  #supporting {
+    width: 31.976744%; /* 275 / 860 = 0.31976744*/
+    float: left;
+    margin-left: 2.034884%; /* 17.5 / 860 = 0.02034884 */
+  }
+
+  #footer {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 1185px){
+  body {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
